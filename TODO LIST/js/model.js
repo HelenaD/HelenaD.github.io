@@ -7,7 +7,6 @@ define(
 
         function Model(data) {
             var self = this;
-            var data = [];
             self.addItem = function (item) {
 
                 if (item.length === 0) {
@@ -48,7 +47,7 @@ define(
                 return JSON.parse(localStorage.getItem('tasks'));
             }
 
-            self.data = data || self.getFromStorage();
+            self.data = data || self.getFromStorage()|| [];
 
         }
         return Model;
