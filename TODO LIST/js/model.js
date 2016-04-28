@@ -7,7 +7,7 @@ define(
 
         function Model(data) {
             var self = this;
-
+            var data = [];
             self.addItem = function (item) {
 
                 if (item.length === 0) {
